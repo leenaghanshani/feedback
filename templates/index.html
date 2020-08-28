@@ -15,18 +15,18 @@
             {% endif %}
             <form action="/submit" method="POST">
                 <div class="form-group">
-                    <h3>
+                    <label><h3>
                         Customer Name
-                    </h3>
+                    </h3></label>
                     <input type="text" 
                             name="customer"     
-                            placeholder="Name of product owner">
+                            placeholder="Name of product owner" required>
                 </div>
                 <div class="form-group">
-                    <h3>
+                <label><h3>
                         Dealer
-                    </h3>
-                    <select name="dealer">
+                    </h3></label>
+                    <select name="dealer" required>
                         <option value="">Select Dealer</option>
                         <option value="Tom Smith">Tom Smith</option>
                         <option value="Leena Ghanshani">Leena Ghanshani</option>
@@ -35,10 +35,10 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <h3>
+                <label><h3>
                         Please rate your dealer
-                    </h3>
-                    <input type="radio" name="rating" value="1"/>1
+                    </h3></label>
+                    <input type="radio" name="rating" value="1" required/>1
                     <input type="radio" name="rating" value="2"/>2
                     <input type="radio" name="rating" value="3"/>3
                     <input type="radio" name="rating" value="4"/>4
@@ -47,12 +47,12 @@
                     <input type="radio" name="rating" value="7"/>7
                     <input type="radio" name="rating" value="8"/>8
                     <input type="radio" name="rating" value="9"/>9
-                    <input type="radio" name="rating" value="10" checked/>10
+                    <input type="radio" name="rating" value="10"/>10
                 </div>
                 <div class="form-group">
-                    <h3>
+                <label><h3 class="optional">
                         Comments about your experience
-                    </h3>
+                    </h3></label>
                     <textarea name="comments" id="" cols="30" rows="10" placeholder="Tell us what you did/didnot like">
                     </textarea>
                 </div>

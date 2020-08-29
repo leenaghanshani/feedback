@@ -76,3 +76,9 @@ textarea {
 	outline: none;
 	margin-top: 1rem;
 }
+
+@media(max-height: 400px){
+	.container{
+		margin-top: 3rem;
+	}
+}
